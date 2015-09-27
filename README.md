@@ -16,7 +16,7 @@ When we are iterating over objects in a collection like with `#each` we generall
 ```ruby
 ["Red", "Yellow", "Blue"].each do |color|
   puts "There are #{color.length} letters in #{color}"
-end
+end #=> ["Red", "Yellow", "Blue"]
 ```
 
 If you run this code in IRB, you'll see:
