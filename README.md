@@ -103,3 +103,17 @@ Sometimes you want to be a bit more forgiving then `#all?` or `#none?` and just 
 ```
 
 The `#any?` expression above will return `true` because at least one element, `100`, will produce a `true` evaluation in the block.
+
+## `#include?`
+
+Whereas `#any?` is useful for evaluating the truthiness of the logic of a block, `#include?` is helpful if you'd like to merely compare actual contents of a known value.
+
+`#include?` will return `true` if the given object exists in the element. If it doesn't find a match, it will return `false`.
+
+```ruby
+the_numbers = [4,8,15,16,23,42]
+the_numbers.include?(42)   #=> true
+the_numbers.include?(6)   #=> false
+```
+
+The `#include?` expression first returns `true` because `the_numbers[5] == 42`. When it is run with `6`, it will evaluate to `false` since that item is not present in the array.
