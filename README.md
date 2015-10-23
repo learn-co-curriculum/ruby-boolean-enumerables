@@ -96,7 +96,7 @@ The way `#none?` works is that no iteration of the block passed to `#none?` can 
 
 ## `#any?`
 
-Sometimes you want to be a bit more forgiving then `#all?` or `#none?` and just ensure that at least one element in a collection will create a `true` expression within the block passed. `#any?` is perfect for this. The `#any?` enumerator will return true if at least one iteration of the block evaluates to true, but false if none of them do.
+Sometimes you want to be a bit more forgiving than `#all?` or `#none?` and just ensure that at least one element in a collection will create a `true` expression within the block passed. `#any?` is perfect for this. The `#any?` enumerator will return true if at least one iteration of the block evaluates to true, but false if none of them do.
 
 ```ruby
 [1,2,100].any?{|i| i > 99} #=> true
