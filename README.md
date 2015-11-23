@@ -48,7 +48,7 @@ end
 all_odd #=> false
 ```
 
-That works, the end value of `all_odd` will be false because `1` and `3` flipped the `all_odd` variable to false. However, something so simple - checking if all the elements in this array are odd - isn't being expressed clearly. Worse than our code not expressing our intention is that our code requires us to maintain variable state, `all_odd`, which can easily lead to errors (say if some other piece of code accidentally changes that variable value).
+That works, the end value of `all_odd` will be false because `2`  flipped the `all_odd` variable to false. However, something so simple - checking if all the elements in this array are odd - isn't being expressed clearly. Worse than our code not expressing our intention is that our code requires us to maintain variable state, `all_odd`, which can easily lead to errors (say if some other piece of code accidentally changes that variable value).
 
 Consider the following example using `#all?`:
 
