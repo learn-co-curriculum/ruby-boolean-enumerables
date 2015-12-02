@@ -1,5 +1,6 @@
 tags:
-  - tag1
+  - boolean
+  - enumerables
 languages:
-  - language1
+  - ruby
 resources: 0
