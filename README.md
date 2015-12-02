@@ -117,3 +117,5 @@ the_numbers.include?(6)   #=> false
 ```
 
 The `#include?` expression first returns `true` because `the_numbers[5] == 42`. When it is run with `6`, it will evaluate to `false` since that item is not present in the array.
+
+<a href='https://learn.co/lessons/ruby-boolean-enumerables' data-visibility='hidden'>View this lesson on Learn.co</a>
