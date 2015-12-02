@@ -41,7 +41,7 @@ Imagine wanting to know if all the numbers in an array are odd. You could use ea
 ```ruby
 all_odd = true
 [1,2,3].each do |number|
-  if number.even? # Will evaluate to true for 1, false for 2, true for 1
+  if number.even? # Will evaluate to false for 1, true for 2, false for 1
     all_odd = false
   end
 end
