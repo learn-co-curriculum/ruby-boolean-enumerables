@@ -90,7 +90,7 @@ end #=> [1,3] because `#each` always returns the original collection
 none_even #=> true
 ```
 
-These high-level boolean enumerators like `#all?` and `#none?` are way cleaner for evaluating elements in a collection for `true`/`false` conditions.
+These high-level boolean enumerators like `#all?` and `#none?` are way cleaner for evaluating elements in a collection for `true`/`false` conditions than some other methods.
 
 The way `#none?` works is that no iteration of the block passed to `#none?` can create a `true` expression.
 
@@ -118,4 +118,6 @@ the_numbers.include?(6)   #=> false
 
 The `#include?` expression first returns `true` because `the_numbers[5] == 42`. When it is run with `6`, it will evaluate to `false` since that item is not present in the array.
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ruby-boolean-enumerables' title='Ruby Boolean Enumerables'>Ruby Boolean Enumerables</a> on Learn.co and start learning to code for free.</p>
+<a href='https://learn.co/lessons/ruby-boolean-enumerables' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ruby-boolean-enumerables'>Boolean Enumerators</a> on Learn.co and start learning to code for free.</p>
