@@ -72,7 +72,7 @@ That's the rule for `#all?` - every iteration, every loop of the block must retu
 
 ## `#none?`
 
-Imagine the opposite of `#all?`, a method `#none?`, where we are interested in none of the elements in a collection producing a true expression within the block passed to `#none?`.
+Imagine the opposite of `#all?`, a method `#none?`, where we are interested in whether none of the elements in a collection producing a true expression within the block passed to `#none?`.
 
 ```ruby
 [1,3].none?{|i| i.even?} #=> true
@@ -118,4 +118,6 @@ the_numbers.include?(6)   #=> false
 
 The `#include?` expression first returns `true` because `the_numbers[5] == 42`. When it is run with `6`, it will evaluate to `false` since that item is not present in the array.
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ruby-boolean-enumerables' title='Ruby Boolean Enumerables'>Ruby Boolean Enumerables</a> on Learn.co and start learning to code for free.</p>
+<a href='https://learn.co/lessons/ruby-boolean-enumerables' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ruby-boolean-enumerables'>Boolean Enumerators</a> on Learn.co and start learning to code for free.</p>
