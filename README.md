@@ -78,7 +78,7 @@ Imagine the opposite of `#all?`, a method `#none?`, where we are interested in n
 [1,3].none?{|i| i.even?} #=> true
 ```
 
-The entire expression `#none?` returns true because none of those numbers will produce a `true` expression when asked if they are even within the block. Compare the code above to the code required to test that condition using `#each`.
+The entire expression `#none?` returns true because none of those numbers will produce a `true` expression when asked within the block if they are even. Compare the code above to the code required to test that condition using `#each`:
 
 ```ruby
 none_even = true
@@ -92,7 +92,7 @@ none_even #=> true
 
 These high-level boolean enumerators like `#all?` and `#none?` are way cleaner for evaluating elements in a collection for `true`/`false` conditions.
 
-The way `#none?` works is that no iteration of the block passed to `#none?` can create a `true` expression.
+To recap, if _any_ of the elements in the collection evaluate to `true` when passed to the block, `#none?` will return `false`. If _none_ of the elements evaluate to `true`, `#none?` will return `true`.
 
 ## `#any?`
 
