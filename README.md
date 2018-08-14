@@ -108,7 +108,7 @@ The `#any?` expression above will return `true` because at least one element, `1
 
 Whereas `#any?` is useful for evaluating the truthiness of the logic of a block, `#include?` is helpful if you'd like to merely compare actual contents of a known value.
 
-`#include?` will return `true` if the given object exists in the element. If it doesn't find a match, it will return `false`.
+`#include?` will return `true` if the given element exists in the object. If it doesn't find a match, it will return `false`.
 
 ```ruby
 the_numbers = [4,8,15,16,23,42]
